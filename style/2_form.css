@@ -1,34 +1,83 @@
 form {
     margin: 10px auto;
-    width: 800px;
+    width: 40%;
     height: 700px;
     background-color: aquamarine;
     border-radius: 25px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px rgb(71, 88, 71);
 }
 
-form>label {    
+label>input,
+.textInput>label,
+.dropdownInput>label,
+.radioInput,
+.descriptionInput {
     width: 400px;
-    line-height: 50px;
-    height: 50px;
-    /* background-color: blue; */
-    margin-top: 10px;
+}
+
+label>input,
+.dropdownInput>label>select {
+    float: right;
+}
+
+label>input {
+    height: 80px;
+}
+
+.allInputs {
     margin-left: 40px;
-    float: left;
+}
+
+.textInput>label,
+.dropdownInput>label,
+.submitInput {
     clear: left;
-    font-weight: bold;
-
+    float: left;
 }
 
-form>label>input{
-    float: right;    
-    height: 50px;   
-    transform: translate(-50%, 25%);
-
+.textInput>label,
+.dropdownInput>label,
+.dropdownInput>label>select,
+.submitInput,
+.radioInput {
+    line-height: 50px;
 }
 
-input[type=text],input[type=email],input[type=password],input[type=date]{
+.textInput>label,
+.dropdownInput>label,
+.descriptionInput>p>textarea {
+    height: 50px;
+}
+
+.textInput>label>input,
+.dropdownInput>label>select {
     width: 180px;
-    border-radius: 5px;
     height: 2em;
+    transform: translate(-35%, 35%);
+    background-color: white;
+}
+
+.textInput>label>input,
+.descriptionInput>p>textarea,
+.dropdownInput>label>select,
+.submitInput>input {
+    border-radius: 10px;
+}
+
+.descriptionInput>p>textarea {
+    width: 330px;
+}
+
+input[type="submit"] {
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    height: 3em;
+    background: linear-gradient(266deg, rgba(18, 142, 111, 1) 0%, rgba(11, 121, 9, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;      
+    height: 4em;
+    width: 12em;
 }

@@ -12,8 +12,7 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
+        <ul>            
             <li><a href="registration.html">Registration Form</a></li>
             <li><a href="blog.html">Fake Blog</a></li>
         </ul>
@@ -22,55 +21,64 @@
         <h1>My Registration Form</h1>
 
         <form>
-            <label>First Name:
-                <input type="text" name="first_name">
-            </label>
+            <div class="allInputs">
 
-            <label>Last Name:
-                <input type="text" name="last_name">
-            </label>
-
-            <label>Email:
-                <input type="email" name="email">
-            </label>
-
-            <label>Password:
-                <input type="password" name="password">
-            </label>
-
-            <label>PW Confirm:
-                <input type="password" name="pw_confirm">
-            </label>
-
-            <label>Birthday:
-                <input type="date" name="date">
-            </label>
-
-            <label>Male
-                <input type="radio" name="Male">
-            </label>
-
-            <label>Female
-                <input type="radio" name="Female">
-            </label>
-
-            <label>Other
-                <input type="radio" name="Other">
-            </label>
-
-            <p>A short description about yourself</p>
-            <textarea name="description"></textarea>
-
-
-            <select name="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="decline">Prefer not to say</option>
-            </select>
-
-            <input type="submit" name="submit">
+                <div class="textInput">
+                    <label>First Name:
+                        <input class="formInput" type="text" name="first_name">
+                    </label>
+    
+                    <label>Last Name:
+                        <input class="formInput" type="text" name="last_name">
+                    </label>
+    
+                    <label>Email:
+                        <input class="formInput" type="email" name="email">
+                    </label>
+    
+                    <label>Password:
+                        <input class="formInput" type="password" name="password">
+                    </label>
+    
+                    <label>PW Confirm:
+                        <input class="formInput" type="password" name="pw_confirm">
+                    </label>
+    
+                    <label>Birthday:
+                        <input class="formInput" type="date" name="date">
+                    </label>
+    
+                </div>
+    
+                <div class="radioInput">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+    
+                <div class="descriptionInput">
+                    <p>A short description about yourself:
+                        <textarea name="description"></textarea></p>
+                </div>
+    
+                <div class="dropdownInput">
+                    <label>Favorite Language:
+                        <select name="language">
+                            <option value="javascript">Javascript</option>
+                            <option value="python">Python</option>
+                            <option value="ruby">Ruby</option>
+                        </select>
+                    </label>
+                </div>
+    
+                <div class="submitInput">
+                    <input type="submit" name="submit" value="Click to Register!">
+                </div>
+            </div>
         </form>
-
     </section>
 </body>
 

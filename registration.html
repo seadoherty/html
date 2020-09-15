@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML | Registration</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/0_base.css">
+    <link rel="stylesheet" type="text/css" href="style/1_nav.css">
+    <link rel="stylesheet" type="text/css" href="style/2_form.css">
 </head>
 
 <body>
@@ -17,7 +19,58 @@
         </ul>
     </nav>
     <section>
-        <h1>Register Here!</h1>
+        <h1>My Registration Form</h1>
+
+        <form>
+            <label>First Name:
+                <input type="text" name="first_name">
+            </label>
+
+            <label>Last Name:
+                <input type="text" name="last_name">
+            </label>
+
+            <label>Email:
+                <input type="email" name="email">
+            </label>
+
+            <label>Password:
+                <input type="password" name="password">
+            </label>
+
+            <label>PW Confirm:
+                <input type="password" name="pw_confirm">
+            </label>
+
+            <label>Birthday:
+                <input type="date" name="date">
+            </label>
+
+            <label>Male
+                <input type="radio" name="Male">
+            </label>
+
+            <label>Female
+                <input type="radio" name="Female">
+            </label>
+
+            <label>Other
+                <input type="radio" name="Other">
+            </label>
+
+            <p>A short description about yourself</p>
+            <textarea name="description"></textarea>
+
+
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="decline">Prefer not to say</option>
+            </select>
+
+            <input type="submit" name="submit">
+        </form>
+
     </section>
 </body>
 
